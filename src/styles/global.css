@@ -1,0 +1,23 @@
+.top-menu-bar {
+    @apply fixed top-0 left-0 right-0 z-50 [bg-[#012d6d]] text-white text-[6px] py-1;
+}
+
+.top-menu-bar .container {
+    @apply flex justify-center space-x-20;
+}
+
+.top-menu-bar a {
+    @apply hover:text-orange-500 text-lg; 
+}
+
+.header {
+    @apply sticky top-10;
+}
+
+.navbar {
+    @apply mt-0; 
+}
+
+body {
+  font-size: 8px;
+}

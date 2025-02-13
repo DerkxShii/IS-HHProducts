@@ -2,32 +2,32 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'An <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Astro</span> Starter <span class="text-secondary"> batteries-included</span>'
+  title: 'Soluciones de <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">HANDHELD</span> para <span class="text-[#012d6d]"> RENTA, VENTA Y REPARACIÓN</span>'
   title_size: "text-4xl md:text-6xl"
-  content: "A fully responsive astro starter repo, ideal for simple (yet laborious) content-driven pages or landings."  
-  image: /images/logo_v5_xl_pfp.webp
+  content: Generamos relaciones de <span class="text-[#012d6d] font-bold">CONFIANZA</span>, proporcionamos <span class="text-[#012d6d] font-bold">SEGURIDAD</span> a traves de nuestros productos y servicios, somos <span class="text-[#012d6d] font-bold">EMPÁTICOS</span> con los requerimientos de nuestros clientes y prospectos. Danos la oportunidad de ser tu <span class="text-[#012d6d] font-bold">PROVEEDOR</span> DE <span class="text-[#012d6d] font-bold">SOLUCIONES</span>
+  image: /images/logo.png
   buttons:
-    - label: Get the Code
-      href: "https://github.com/diego-alfadev/alfadev-astro-starter"
+    - label: Contáctanos
+      href: "https://intelisystems.mx/contact/"
       target: "_blank"
-      icon: _GitHub
+      icon: null
       addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
 
 sections:
-  - title: Tired of writing the same code over and over again?
-    content: "We've all been there... Setting up the same SEO, theming, and responsive layout boilerplate again and again. Say goodbye to that! <b class='text-accent'>alfadev-astro-starter</b> lets you jump straight into creating, skipping the repetitive groundwork."
+  - title: RENTA
+    content: "Comparte con nosotros tu requerimiento y te brindaremos la mejor atención y el mejor equipo a nuestra disposición. <br></br> <b class='text-accent'>1 - IDENTIFICA TU EQUIPO:</b> Contamos con los equipos de las marcas lideres, en su segmento por lo que podemos cubrir cual sea tu requerimiento. <br></br> <b class='text-accent'>2 - SELECCIONA EL PERIODO DE TIEMPO:</b> Entre mayor sea el tiempo nuestras cuotas bajan su costo. <br></br> <b class='text-accent'>3 - DEFINE FECHA Y LUGAR DE ENTREGA:</b> El equipo será entregado en el lugar y fecha indicados."
     image: /images/tired-of-writing.webp
 
-  - title: This is not a library
-    content: It's a <b class='text-accent'>ready-to-go template</b>. No steep learning curves or dozens of new dependencies. Just the essentials to build content-driven pages with ease.<br/>If you're familiar with <span class="text-accent font-bold">Astro</span>, you are good to go.
+  - title: REPARACIÓN
+    content: Nos especializamos en el mantenimiento de <span class="text-accent font-bold">HANDHELD</span>, <span class="text-[#38bdf8] font-bold">IMPRESORAS</span> y <span class="text-[#e41c81] font-bold">LECTORES</span> de las marcas que comercializamos. <br/><br/> Nuestro equipo de ingenieros especializados cuenta con la formación, experiencia y conocimientos necesarios para realizar reparaciones de alta calidad por lo que todas nuestras reparaciones cuentan con una garantía de <span class="text-accent font-bold">100</span> días naturales.
     image: /images/this-is-not-a-library.webp
 
-  - title: Optimized out of the box
-    content: Lightweight and fast. Packed with <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwind</span> and <span class="text-[#e41c81] font-bold">Sass</span> goodness, so your pages load <b class='text-accent'>blazing fast</b>—right from the start. <br/> All the pages are configured in a way that are SEO-friendly and defined with markdown.
+  - title: VENTA
+    content: It's a <b class='text-accent'>ready-to-go template</b>. No steep learning curves or dozens of new dependencies. Just the essentials to build content-driven pages with ease.<br/>If you're familiar with <span class="text-accent font-bold">Astro</span>, you are good to go.
     image: /images/optimized-out-of-the-box.webp
 
-  - title: Looks great, day or night
-    content: "With <b class='text-accent'>built-in dark theme support</b>, your site will look amazing no matter what time of day your users visit. Or what their eyes prefer.<br/> <br/>Forget convoluted theming systems. alfadev-astro-starter keeps it <b class='text-accent'>simple and extensible</b>, so you can focus on your design and let the code work fori you."
+  - title: SOFTWARE
+    content: "Nuestra solución está conformada por el cliente para equipo de escritorio con <b class='text-accent'>S.O. Windows</b>, la cual es una consola que permitirá consolidar la información recabada por los clientes móviles y realizar reportes a la medida, así como los diseñados para detectar diferencias en tu almacén.<br/> <br/>Para el cliente móvil <b class='text-accent'>(HAND HELD)</b>, conservamos nuestra versión para Windows Mobile para nuestros clientes que han decidido mantener su tecnología con este <b class='text-accent'>S.O.</b> y para aquellos que sus necesidades los llevaron a migrar a la plataforma <b class='text-accent'>ANDROID</b> ya tenemos nuestra versión a su servicio."
     image: /images/loogs-good.webp
 
 

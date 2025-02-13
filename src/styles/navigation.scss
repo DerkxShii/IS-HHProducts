@@ -95,3 +95,33 @@ input#nav-toggle:checked ~ #nav-menu {
 .nav-dropdown-link {
   @apply min-w-[150px] py-1 text-base font-medium transition hover:text-secondary text-text;
 }
+
+// Estilos para la barra de contactos
+.top-menu-bar {
+  @apply fixed top-0 left-0 right-0 z-50 bg-blue-950 text-white text-[6px] py-1;
+}
+
+.top-menu-bar .container {
+  @apply flex justify-center space-x-20;
+}
+
+.top-menu-bar a {
+  @apply hover:text-orange-500 text-lg; 
+}
+
+.header {
+  @apply sticky top-10;
+}
+
+.navbar {
+  @apply mt-0; 
+}
+
+// Ajustes  para la barra de navegación principal
+.header {
+  @apply sticky top-10; // Ajusta la posición para que esté debajo de la barra de contactos
+}
+
+.navbar {
+  @apply mt-0; // Elimina cualquier margen superior
+}

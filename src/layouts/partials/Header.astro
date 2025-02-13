@@ -15,9 +15,17 @@ export interface NavigationLink {
   children?: ChildNavigationLink[];
 }
 
-const { main }: { main: NavigationLink[] } = menu;
+const { main, menuContact }: { main: NavigationLink[], menuContact: NavigationLink[] } = menu;
 const { pathname } = Astro.url;
 ---
+
+<div class="top-menu-bar">
+  <div class="container">
+    {menuContact.map((contact) => (
+      <a href={contact.url} class="contact-link">{contact.name}</a>
+    ))}
+  </div>
+</div>
 
 <header class="header">
   <nav class="navbar container">

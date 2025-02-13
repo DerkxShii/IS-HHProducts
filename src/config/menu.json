@@ -28,16 +28,39 @@
       ]
     },
     {
-      "name": "Línea de Productos",
-      "url": "/about"
+      "name": "Productos",
+      "url": "https://intelisystems.mx/products/"
     },
     {
       "name": "Promociones",
       "url": ""
     },
     {
+      "name": "Blog",
+      "url": "https://intelisystems.mx/blog/"
+    },
+    {
       "name": "Contacto",
-      "url": "/contact"
+      "url": "https://intelisystems.mx/contact/"
+    }
+  ],
+
+  "menuContact": [
+    {
+      "name": "Correo",
+      "url": "https://intelisystems.mx/contact/"
+    },
+    {
+      "name": "Teléfono",
+      "url": "https://intelisystems.mx/contact/"
+    },
+    {
+      "name": "Teléfono",
+      "url": "https://intelisystems.mx/contact/"
+    },
+    {
+      "name": "InteliSystems",
+      "url": "https://intelisystems.mx/contact/"
     }
   ],
 
