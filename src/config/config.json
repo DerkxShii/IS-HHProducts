@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "alfadev-astro-starter",
+    "title": "HandHeld",
     "base_url": "https://astro-starter.alfadev.io",
     "base_path": "/",
     "trailing_slash": false,
@@ -8,7 +8,7 @@
     "logo": "/images/logo.png",
     "logo_width": "47",
     "logo_height": "47",
-    "logo_text": "alfadev-astro-starter"
+    "logo_text": "HandHeld"
   },
 
   "params": {

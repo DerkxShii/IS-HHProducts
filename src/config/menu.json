@@ -1,56 +1,43 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "Features",
-      "url": "/features"
-    },
-    {
-      "name": "Theme",
-      "url": "/theme"
-    },
-    {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Pages",
+      "name": "Servicios",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Changelog",
-          "url": "/changelog"
+          "name": "Renta",
+          "url": "/"
         },
         {
-          "name": "Does not exist",
-          "url": "/does-not-exist"
-        },
-
-        {
-          "name": "Neither does this",
-          "url": "/neither-does-this"
+          "name": "Venta",
+          "url": "/"
         },
         {
-          "name": "Nope, not this one either",
-          "url": "/nope-not-this-one-either"
+          "name": "Reparación",
+          "url": "/"
         },
         {
-          "name": "What about this?",
-          "url": "/what-about-this"
-        },
-        {
-          "name": "Come on, this one must exist",
-          "url": "/come-on-this-one-must-exist"
-        },
-        {
-          "name": "Do you expect this to exist?",
-          "url": "/do-you-expect-this-to-exist"
+          "name": "Software",
+          "url": "/"
         }
       ]
+    },
+    {
+      "name": "Línea de Productos",
+      "url": "/about"
+    },
+    {
+      "name": "Promociones",
+      "url": ""
+    },
+    {
+      "name": "Contacto",
+      "url": "/contact"
     }
   ],
 
@@ -61,7 +48,7 @@
     },
     {
       "name": "Changelog",
-      "url": "/changelog"
+      "url": "/"
     }
   ]
 }
