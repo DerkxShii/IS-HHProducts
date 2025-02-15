@@ -53,7 +53,8 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply block p-3 py-2 text-xl md:text-base text-text transition hover:text-secondary md:px-2 lg:inline-block;
+  @apply block p-4 py-3 text-2xl md:text-lg text-text transition hover:text-secondary md:px-3 lg:inline-block;
+  margin-right: 1.2rem; // Increased spacing between options
 
   &.active {
     @apply relative;
@@ -98,7 +99,7 @@ input#nav-toggle:checked ~ #nav-menu {
 
 // Estilos para la barra de contactos
 .top-menu-bar {
-  @apply fixed top-0 left-0 right-0 z-50 bg-blue-950 text-white text-[6px] py-1;
+  @apply fixed top-0 left-0 right-0 z-50 bg-blue-950 text-white text-[6px] py-1.5;
 }
 
 .top-menu-bar .container {
@@ -106,7 +107,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .top-menu-bar a {
-  @apply hover:text-orange-500 text-lg; 
+  @apply hover:text-orange-500 text-lg text-[16px]; 
 }
 
 .header {

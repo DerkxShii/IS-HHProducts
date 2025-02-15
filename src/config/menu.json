@@ -48,19 +48,23 @@
   "menuContact": [
     {
       "name": "Correo",
-      "url": "https://intelisystems.mx/contact/"
+      "url": "https://intelisystems.mx/contact/",
+      "icon": "mail"
     },
     {
       "name": "Teléfono",
-      "url": "https://intelisystems.mx/contact/"
+      "url": "https://intelisystems.mx/contact/",
+      "icon": "phone"
     },
     {
-      "name": "Teléfono",
-      "url": "https://intelisystems.mx/contact/"  
+      "name": "WhatsApp",
+      "url": "https://intelisystems.mx/contact/",
+      "icon": "whatsapp"
     },
     {
       "name": "InteliSystems",
-      "url": "https://intelisystems.mx/contact/"
+      "url": "https://intelisystems.mx/contact/",
+      "icon": "web"
     }
   ],
 
