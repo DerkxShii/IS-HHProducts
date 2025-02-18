@@ -6,7 +6,6 @@ import { defineConfig, sharpImageService } from "astro/config";
 import config from "./src/config/config.json";
 import AutoImport from "astro-auto-import";
 
-// https://astro.build/config
 export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://astrotemplatesitey.com",
   base: config.site.base_path ? config.site.base_path : "/",
@@ -20,7 +19,6 @@ export default defineConfig({
       }
     }
   },
-  // Image optimization service
   image: {
     service: sharpImageService(),
   },
@@ -29,7 +27,6 @@ export default defineConfig({
     sitemap(),
     tailwind(),
     AutoImport({
-      // import react components to use in mdx
       imports: [
         "@/components/react/FeatherIcon.tsx",
         "@/components/CounterComponent.astro",

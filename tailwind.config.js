@@ -41,14 +41,11 @@ module.exports = {
         secondary: ["var(--font-secondary)", fontSecondaryType],
       },
       textShadow: {
-        // --tw-shadow-color is not defined in tailwindcss by now
         sm: "0 0px 2px var(--tw-shadow-color)",
         DEFAULT: "0 0px 3px var(--tw-shadow-color)",
         lg: "0 0px 8px var(--tw-shadow-color)",
       },
 
-      // Custom animations
-      // Defined keyframes
       keyframes: {
         "scrolling-banner": {
             from: {transform: "translateX(0)"},
@@ -71,7 +68,6 @@ module.exports = {
           "100%": { visibility: "hidden", opacity: 0 },
         },
       },
-      // Defined animations
       animation: {
         "scrolling-banner": "scrolling-banner var(--duration) linear infinite",
         "scrolling-banner-vertical": "scrolling-banner-vertical var(--duration) linear infinite",
