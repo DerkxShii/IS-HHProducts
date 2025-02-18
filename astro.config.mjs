@@ -7,7 +7,7 @@ import config from "./src/config/config.json";
 import AutoImport from "astro-auto-import";
 
 export default defineConfig({
-  site: config.site.base_url ? config.site.base_url : "http://localhost:3000", // Cambié "/" a "http://localhost:3000"
+  site: config.site.base_url ? config.site.base_url : "http://localhost:4321", // Cambié "/" a "http://localhost:3000"
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   vite: {
