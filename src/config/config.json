@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "HandHeld Products",
-    "base_url": "/",
+    "base_url": "http://localhost:3000",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/logo.png",
