@@ -94,20 +94,33 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-link {
-  @apply min-w-[150px] py-1 text-base font-medium transition hover:text-secondary text-text;
+  @apply min-w-[150px] py-1 text-base font-medium transition hover:text-secondary text-text justify-center;
 }
 
 // Estilos para la barra de contactos
 .top-menu-bar {
-  @apply fixed top-0 left-0 right-0 z-50 bg-blue-950 text-white text-[6px] py-1.5;
+  @apply fixed top-0 left-0 right-0 z-50 bg-[#007aff] text-white text-[6px] py-1.5 overflow-x-auto;
+  @media (max-width: 768px) {
+    @apply py-0.5;
+  }
 }
 
 .top-menu-bar .container {
-  @apply flex justify-center space-x-20;
+  @apply flex flex-wrap justify-center items-center space-y-2 md:space-y-0 space-x-12 md:space-x-12 lg:space-x-20;
+  @media (max-width: 768px) {
+    @apply space-y-0 py-1;
+  }
 }
 
 .top-menu-bar a {
-  @apply hover:text-orange-500 text-lg text-[16px]; 
+  @apply hover:text-[#101f3f] text-lg text-[16px];
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: -9999px;
+  }
 }
 
 .header {
@@ -126,3 +139,35 @@ input#nav-toggle:checked ~ #nav-menu {
 .navbar {
   @apply mt-0; // Elimina cualquier margen superior
 }
+
+// Estilos para el logo
+#logo {
+  height: 7rem; // Tamaño normal
+
+  @media (max-width: 1024px) {
+    height: 5rem; // Tamaño reducido para pantallas medianas
+  }
+
+  @media (max-width: 768px) {
+    height: 4rem; // Tamaño reducido para pantallas pequeñas
+  }
+}
+
+// Estilos para el contenedor del logo de luna/sol
+.theme-toggle-container {
+  @apply flex items-center justify-center h-full;
+
+  @media (max-width: 1024px) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
+// Ajustes para el logo de luna/sol
+.theme-toggle-icon {
+  @apply h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10;
+}
+

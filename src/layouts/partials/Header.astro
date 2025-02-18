@@ -2,7 +2,9 @@
 import Logo from "@/components/core/Logo.astro";
 import ThemeToggle from "@/components/core/ThemeToggle.astro";
 import menu from "@/config/menu.json";
-import Theme from "@/pages/theme.astro";
+import theme from "@/config/theme.json";
+
+const { colors: themeColors } = theme
 
 export interface ChildNavigationLink {
   name: string;
@@ -28,22 +30,22 @@ const { pathname } = Astro.url;
         <a href={contact.url} class="contact-link" style="display: flex; gap: 0.5rem; align-items: center;">
           {
             contact.icon == "phone" && (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position: relative; top: 2.5px;"><path fill="currentColor" d="m6.68 3.32l.613-.613a1 1 0 0 1 1.414 0l2.586 2.586a1 1 0 0 1 0 1.414L9.5 8.5a.98.98 0 0 0-.183 1.133a11.3 11.3 0 0 0 5.05 5.05a.98.98 0 0 0 1.133-.184l1.793-1.792a1 1 0 0 1 1.414 0l2.586 2.586a1 1 0 0 1 0 1.414l-.613.613a6 6 0 0 1-7.843.558l-1.208-.907a23 23 0 0 1-4.6-4.6l-.907-1.208A6 6 0 0 1 6.68 3.32"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position: relative;"><path fill="currentColor" d="m6.68 3.32l.613-.613a1 1 0 0 1 1.414 0l2.586 2.586a1 1 0 0 1 0 1.414L9.5 8.5a.98.98 0 0 0-.183 1.133a11.3 11.3 0 0 0 5.05 5.05a.98.98 0 0 0 1.133-.184l1.793-1.792a1 1 0 0 1 1.414 0l2.586 2.586a1 1 0 0 1 0 1.414l-.613.613a6 6 0 0 1-7.843.558l-1.208-.907a23 23 0 0 1-4.6-4.6l-.907-1.208A6 6 0 0 1 6.68 3.32"/></svg>
             )
           }
           {
             contact.icon == "whatsapp" && (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position: relative; top: 0.5px"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position: relative;"><path fill="currentColor" d="M19.074 4.894A9.93 9.93 0 0 0 12.064 2C6.598 2 2.13 6.437 2.13 11.904c0 1.768.45 3.44 1.318 4.983L2.032 22l5.306-1.35c1.447.771 3.087 1.221 4.759 1.221c5.434-.032 9.87-4.47 9.87-9.967c0-2.637-1.028-5.113-2.893-7.01m-7.042 15.273a8.2 8.2 0 0 1-4.212-1.19l-.322-.192l-3.119.803l.869-3.022l-.193-.322A8.53 8.53 0 0 1 3.8 11.84c0-4.534 3.665-8.2 8.231-8.2c2.187 0 4.245.869 5.788 2.412a8.24 8.24 0 0 1 2.412 5.852c.064 4.599-3.666 8.264-8.2 8.264m4.534-6.173c-.257-.129-1.447-.74-1.736-.772c-.225-.097-.418-.129-.547.129c-.129.257-.643.771-.772.964c-.128.129-.257.193-.546.032c-.258-.128-1.03-.353-1.994-1.254c-.74-.643-1.254-1.447-1.35-1.736c-.129-.257-.033-.354.128-.515c.129-.128.258-.257.354-.45c.129-.128.129-.257.257-.418c.129-.128.032-.321-.032-.45c-.096-.128-.547-1.35-.772-1.865c-.193-.514-.418-.418-.546-.418h-.45c-.13 0-.45.032-.644.322c-.225.257-.868.868-.868 2.09s.868 2.347 1.03 2.572c.128.129 1.768 2.669 4.212 3.762c.578.257 1.028.418 1.414.547c.579.193 1.126.128 1.544.096c.482-.032 1.447-.579 1.672-1.19c.193-.546.193-1.093.128-1.19c-.064-.063-.257-.16-.482-.256"/></svg>
             )
           }
           {
             contact.icon == "web" && (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position relative; top: 2px"><path fill="currentColor" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position: relative;"><path fill="currentColor" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
             )
           }
           {
             contact.icon == "mail" && (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position relative; top: 0.5px"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="position: relative;"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037"/></svg>
             )
           }
           
@@ -58,9 +60,7 @@ const { pathname } = Astro.url;
     <!-- logo -->
     <div class="order-0 flex items-center">
       <a href="/" style="display: flex; align-items: center;">
-        {
-          <img src="/images/logo.png" alt="Logo" style="height: 7rem; width: auto; position: absolute; top: -2rem;" />
-        }
+        <img id="logo" src="/images/logo.png" alt="Logo" style="position: absolute;" />
       </a>
       <Logo />
     </div>
@@ -151,8 +151,8 @@ const { pathname } = Astro.url;
         ))
       }
     </ul>
-    <div class="order-1 ml-auto absolute right-3 top-3 items-center md:order-2 md:ml-0 lg:relative lg:right-0 lg:flex lg:top-0">
-      <ThemeToggle />
+    <div class="order-1 ml-auto absolute right-3 top-3 items-center md:order-2 md:ml-0 lg:relative lg:right-0 lg:flex lg:top-0 theme-toggle-container">
+      <ThemeToggle class="theme-toggle-icon" />
     </div>
   </header>
 </nav>
@@ -180,4 +180,22 @@ const { pathname } = Astro.url;
   document.addEventListener("astro:page-load", () => {
     initDropdownListeners();
   });
+
+  function updateLogo(theme) {
+    const logo = document.getElementById('logo');
+    if (theme === 'dark') {
+      logo.src = '/images/logo-white.png';
+    } else {
+      logo.src = '/images/logo.png';
+    }
+  }
+
+  document.addEventListener('themeChange', (event) => {
+    updateLogo(event.detail);
+  });
+
+  // Inicializar el logo basado en el tema actual 
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  console.log(currentTheme);
+  updateLogo(currentTheme);
 </script>

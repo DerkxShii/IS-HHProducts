@@ -1,19 +1,20 @@
 ---
 import PageHeader from "@/components/core/PageHeader.astro";
 import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
 import { getEntry } from "astro:content";
 
-const features = await getEntry("features", "index");
-const { Content } = await features.render();
+const homepage = await getEntry("homepage", "index");
+const call_to_action = homepage.data.call_to_action;
 ---
 
 <Base>
   <section class="py-16">
     <div class="container">
-      <PageHeader page_data={features.data} />
-    </div>
-    <div class="container">
-       <Content />
+
+          <!-- call to action -->
+          <Cta {...call_to_action} />
+
     </div>
   </section>
 </Base>

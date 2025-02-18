@@ -10,20 +10,16 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Renta",
-          "url": "/"
-        },
-        {
-          "name": "Venta",
-          "url": "/"
+          "name": "Arrendamiento",
+          "url": "/arrendamiento"
         },
         {
           "name": "Reparación",
-          "url": "/"
+          "url": "/reparacion"
         },
         {
           "name": "Software",
-          "url": "/"
+          "url": "/software"
         }
       ]
     },
@@ -33,7 +29,7 @@
     },
     {
       "name": "Promociones",
-      "url": ""
+      "url": "/promociones"
     },
     {
       "name": "Blog",
@@ -70,12 +66,16 @@
 
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Arrendamiento",
+      "url": "/arrendamiento"
     },
     {
-      "name": "Changelog",
-      "url": "/"
+      "name": "Reparación",
+      "url": "/reparacion"
+    },
+    {
+      "name": "Software",
+      "url": "/software"
     }
   ]
 }
