@@ -1,10 +1,9 @@
 "use client";
 
-import type {ScrollShadowProps} from "@heroui/react";
-
+import type { ScrollShadowProps } from "@heroui/react";
 import React from "react";
-import {ScrollShadow} from "@heroui/react";
-import {cn} from "@heroui/react";
+import { ScrollShadow } from "@heroui/react";
+import { cn } from "@heroui/react";
 
 interface ScrollingBannerProps extends ScrollShadowProps {
   isReverse?: boolean;
@@ -25,7 +24,7 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
       gap = "1rem",
       showShadow = true,
       shouldPauseOnHover = true,
-      duration = 40,
+      duration = 35,
       children,
       style,
       ...props
@@ -69,7 +68,7 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
             "animate-scrolling-banner": !isVertical,
             "animate-scrolling-banner-vertical": isVertical,
             "[animation-direction:reverse]": isReverse,
-            "hover:[animation-play-state:paused]": shouldPauseOnHover,
+            // "hover:[animation-play-state:paused]": shouldPauseOnHover,
           })}
         >
           {React.Children.map(children, (child) => React.cloneElement(child as any))}

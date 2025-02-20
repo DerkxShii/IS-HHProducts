@@ -1,0 +1,31 @@
+---
+import PageHeader from "@/components/core/PageHeader.astro";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import Image from "@/components/react/image";
+import { getEntry } from "astro:content";
+
+const homepage = await getEntry("homepage", "index");
+const call_to_action = homepage.data.call_to_action;
+
+const images = [
+  { src: "https://intelisystems.net/assets/images/ProductosPubli.jpeg", alt: "Promociones-1" },
+  { src: "/public/images/promociones/sv-1.jpg", alt: "Promociones-2" }
+];
+---
+
+<Base>
+  <!-- Image -->    
+  <section class="py-16">
+    <div class="container flex flex-col items-center justify-center">
+      <Image client:load images={images} className="mx-auto" />
+    </div>
+  </section>
+
+  <section class="py-2">
+    <div class="container">
+      <!-- call to action -->
+      <Cta {...call_to_action} />
+    </div>
+  </section>
+</Base>
