@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "HandHeld Products",
+    "title": "HandHeld Products | HANDHELD | IMPRESORAS | PDA | TERMINAL PORTATIL | RENTA CON SOFTWARE",
     "base_url": "http://localhost:4321",
     "base_path": "/",
     "trailing_slash": false,
@@ -12,18 +12,18 @@
   },
 
   "params": {
-    "footer_description": "HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld",
-    "email": "correo@empresa.dom",
-    "location": "HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld HandHeld",
-    "phone": "+99 9999 9999",
+    "footer_description": "Nos dedicamos a la venta, renta y reparación de equipo de cómputo móvil, lectores e impresoras de códigos de barras, así como el desarrollo de aplicaciones para estos dispositivos.",
+    "email": "info@intelisystems.net",
+    "location": "Oriente 237 No. 492, Colonia Agrícola Oriental, Delegación Iztacalco, Ciudad de México",
+    "phone": "+52 55 5758 9578",
     "contact_form_action": "#",
-    "copyright": "HandHeld. Aviso de Privacidad"
+    "copyright": "Aviso de Privacidad"
 },
 
   "metadata": {
     "meta_author": "InteliSystems",
     "meta_image": "/images/logo.png",
-    "meta_description": "HandHeld es una empresa que se dedica a la renta o venta de productos y servicios de tecnología.",
+    "meta_description": "Intelisystems ofrece servicios especializados de reparación, mantenimiento y renta de handhelds e impresoras portátiles para optimizar tus operaciones. Contáctanos para soluciones confiables y personalizadas que mejoren la eficiencia de tu negocio.",
     "meta_keywords": ["HandHeld", "InteliSystems", "Venta de HandHeld", "Renta HandHeld", "Impresoras", "Software", "Almacén"],
     "meta_application_name": "HandHeldProducts"
   }

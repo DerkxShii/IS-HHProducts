@@ -49,7 +49,7 @@ export default function Carrusel() {
             onMouseEnter={() => handleMouseEnter(key)}
             onMouseLeave={handleMouseLeave}
             style={{
-              filter: hoveredLogo === key ? "grayscale(0%)" : "grayscale(100%)",
+              filter: hoveredLogo === key ? "grayscale(0%)" : "grayscale(100%)", 
               transform: hoveredLogo === key ? "scale(1.3)" : "scale(1)",
               transition: "filter 0.3s ease, transform 0.3s ease",
               width: "250px",

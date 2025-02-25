@@ -43,23 +43,23 @@
 
   "menuContact": [
     {
-      "name": "Correo",
+      "name": "info@intelisystems.net",
       "url": "https://intelisystems.mx/contact/",
       "icon": "mail"
     },
     {
-      "name": "Teléfono",
+      "name": "55 5701 7337",
       "url": "https://intelisystems.mx/contact/",
       "icon": "phone"
     },
     {
-      "name": "WhatsApp",
-      "url": "https://intelisystems.mx/contact/",
+      "name": "55 7122 2638",
+      "url": "https://api.whatsapp.com/send/?phone=5215571222638&text&type=phone_number&app_absent=0",
       "icon": "whatsapp"
     },
     {
       "name": "InteliSystems",
-      "url": "https://intelisystems.mx/contact/",
+      "url": "https://intelisystems.net/",
       "icon": "web"
     }
   ],
@@ -72,6 +72,10 @@
     {
       "name": "Reparación",
       "url": "/reparacion"
+    },
+    {
+      "name": "Venta",
+      "url": "https://intelisystems.mx/products/"
     },
     {
       "name": "Software",
