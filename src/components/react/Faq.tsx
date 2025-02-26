@@ -3,11 +3,11 @@ import React from "react";
 
 export default function App() {
   return (
-    <section className="w-full max-w-6xl mx-auto px-6 py-3 sm:py-32 lg:px-8 lg:py-6">
+    <section className="w-full max-w-6xl mx-auto px-6 py-3 sm:py-32 lg:px-8 lg:py-6 mb-5">
         <header className= "mb-10">    
             <h1 className="text-4xl font-bold text-center" >Preguntas Frecuentes</h1>    
         </header> 
-        <Accordion variant="shadow">
+        <Accordion>
             <AccordionItem key="1" aria-label="Accordion 1" title="¿El plan de renta incluye software?">
             Si, incluye SOFTWARE(Inventarios Windows Mobile), accesorios de carga y comunicación para cubrir el número de equipos 
             solicitados, además de una batería de respaldo por equipo. Y un equipo de respaldo (en rentas mayores a 10 equipos).
