@@ -13,11 +13,11 @@
 
   "params": {
     "footer_description": "Nos dedicamos a la venta, renta y reparación de equipo de cómputo móvil, lectores e impresoras de códigos de barras, así como el desarrollo de aplicaciones para estos dispositivos.",
-    "email": "info@intelisystems.net",
+    "email": "contacto@intelisystems.net",
     "location": "Oriente 237 No. 492, Colonia Agrícola Oriental, Delegación Iztacalco, Ciudad de México",
-    "phone": "+52 55 5758 9578",
+    "phone": "+52 55 5701 4315",
     "contact_form_action": "#",
-    "copyright": "Aviso de Privacidad"
+    "copyright": "<a href='https://intelisystems.net/aviso_privacidad.html' class=' hover:text-accent hover:underline hover:decoration-accent'>Aviso de Privacidad</a>"
 },
 
   "metadata": {

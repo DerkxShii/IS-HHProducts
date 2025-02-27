@@ -1,0 +1,111 @@
+---
+import PageHeader from "@/components/core/PageHeader.astro";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import { getEntry } from "astro:content";
+import Features from "@/components/Features.astro";
+
+const homepage = await getEntry("homepage", "index");
+const call_to_action = homepage.data.call_to_action;
+const {features} = homepage.data;
+---
+
+<Base>
+  <!-- Header section -->
+  <div class="relative isolate overflow-hidden bg-gray-950  mt-12 lg:mb-26 animate-fade-in"> 
+    <video autoplay="autoplay" muted playsinline contextmenu="return false;" preload="auto" loop="loop" class="absolute inset-0 -z-10 w-full h-full object-cover">
+      <source src="/videos/video servicios arrendamiento.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="inset-0 w-full h-full bg-black bg-opacity-50 py-16 sm:py-32">
+      <div class="lg:mb-2 animate-fade-in">
+        <div class="relative isolate px-6 pt-4 lg:px-8">
+          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+          <div class="mx-auto max-w-5xl sm:py-16 lg:py-12">
+            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            </div>
+            <div class="text-center">
+              <h1 class="text-5x1 font-semibold tracking-tight text-balance text-gray-100 dark:text-gray-100 sm:text-7xl">Arrendamiento de <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Terminales</span> e <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Impresoras Portátiles</span> </h1>
+              <p class="mt-8 text-lg font-medium text-pretty text-gray-100 dark:text-gray-100 sm:text-xl/8">Accede a terminales e impresoras portátiles de última generación mediante nuestro servicio de arrendamiento. Tenemos lo último en tecnología para captura de datos, gestión de inventario y lectura de códigos de barras. Ofrecemos soluciones adaptadas a tus necesidades.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="https://intelisystems.mx/contact/" class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#111827] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">Contáctanos</a>
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white dark:text-gray-100 sm:grid-cols-2 md:flex lg:gap-x-7">
+                  <a href="/reparacion-handheld-impresoras-lectores" class="hover:text-accent">Reparación <span aria-hidden="true">&rarr;</span></a>
+                  <a href="/toma-de-inventario-almacen" class="hover:text-accent">Software <span aria-hidden="true">&rarr;</span></a>
+                  <a href="" class="hover:text-accent">Catalógo <span aria-hidden="true">&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Beneficios-section -->
+  <div id="Costos"></div>
+  <Features features={features}/>
+  <!-- Costos -->
+  <div class="py-8 sm:py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base/7 font-semibold text-accent">Arrendamiento por periodos largos</h2>
+        <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-balance">Nuestras Tarifas</p>
+        <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-100">Las tarifas que manejamos se definen a partir del tiempo de uso. Si el contrato es mayor a 6 meses será un periodo LARGO y habrán beneficios extras:</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1-1.8-1M12 7v10"/></g></svg>
+              </div>
+              Tarifas reducidas
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-100">A mayor tiempo de renta, menor costo por unidad.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 512 512"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M463.1 112.37C373.68 96.33 336.71 84.45 256 48c-80.71 36.45-117.68 48.33-207.1 64.37C32.7 369.13 240.58 457.79 256 464c15.42-6.21 223.3-94.87 207.1-351.63"/></svg>
+              </div>
+              Protección total
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-100">Póliza contra robo o extravío incluida.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16"><path fill="none" stroke="#ffffff" stroke-linejoin="round" d="M10 6.41L13.5 8L8 10.5L2.5 8L6 6.41m4 3L13.5 11L8 13.5L2.5 11L6 9.41M8 2.5L2.5 5L8 7.5L13.5 5z" stroke-width="1"/></svg>
+              </div>
+              Cobertura extendida
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-100">Póliza que cubre abusos, accidentes y desgaste.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m10.05 10.607l-7.07 7.07a2 2 0 0 0 0 2.83v0a2 2 0 0 0 2.828 0l7.07-7.072m4.315.365l3.878 3.878a2 2 0 0 1 0 2.828v0a2 2 0 0 1-2.828 0l-6.209-6.208M6.733 5.904L4.61 6.61L2.49 3.075l1.414-1.414L7.44 3.782zm0 0l2.83 2.83"/><path d="M10.05 10.607c-.844-2.153-.679-4.978 1.061-6.718s4.95-2.121 6.717-1.06l-3.04 3.04l-.283 3.111l3.111-.282l3.04-3.041c1.062 1.768.68 4.978-1.06 6.717c-1.74 1.74-4.564 1.905-6.717 1.061"/></g></svg>
+              </div>
+              Mantenimiento incluido
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-100">Durante todo el periodo de renta cuenta con acceso a soporte técnico incluido.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content section -->
+  <section class="py-16">
+    <div class="container">
+      <!-- call to action -->
+      <Cta {...call_to_action} />
+    </div>
+  </section>
+</Base>

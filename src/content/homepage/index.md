@@ -2,10 +2,10 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'Soluciones <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">HANDHELD</span> en <span class="text-[#2997ff]"> RENTA Y REPARACIÓN</span>'
-  title_size: "text-7x1 md:text-7x1"
+  title: 'Soluciones <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">HANDHELD</span> en <span class="text-[#2997ff]"> RENTA, VENTA Y REPARACIÓN</span>'
+  title_size: "text-5xl md:text-5xl lg:text-5xl"  # Ajusta el tamaño del título aquí
   content: Impulsa la eficiencia y precisión de tu negocio con nuestras soluciones en <span class="text-[#166ee0] font-bold">TERMINALES PORTÁTILES HANDHELD, IMPRESORAS DE CÓDIGOS DE BARRAS, LECTORES DE INVENTARIO</span> y <span class="text-[#166ee0] font-bold">SOFTWARE DE GESTIÓN DE ALMACENES.</span> Ofrecemos servicios de <span class="text-[#166ee0] font-bold">RENTA, VENTA</span> y <span class="text-[#166ee0] font-bold">REPARACIÓN</span>, adaptándonos a las necesidades específicas de tu empresa.
-  image: /images/1 INICIO.png
+  image: /images/handheld-impresoras-lectores-marcas.png
   image_classes: "banner-image-large"
   buttons:
     - label: Contáctanos
@@ -17,15 +17,15 @@ banner:
 sections:
   - title: <a href= "/arrendamiento">ARRENDAMIENTO</a>
     content:  Accede a la tecnología más avanzada sin comprometer tu capital. Nuestro servicio de <span class="text-[#166ee0] font-bold">ARRENDAMIENTO</span> de <span class="text-[#166ee0] font-bold">HANDHELD</span> e <span class="text-[#166ee0] font-bold">IMPRESORAS</span> te brinda la flexibilidad de equipar tu operación con dispositivos de alto rendimiento, asegurando la captura de datos precisa y la optimización de tus procesos logísticos, todo a un costo accesible y con opciones de actualización continua.
-    image: /images/2 RENTA.png
+    image: /images/renta-venta-handheld-impresoras-lectores.png
 
   - title: <a href= "/reparacion">REPARACIÓN</a>
     content: Nos especializamos en el mantenimiento de <span class="text-accent font-bold">HANDHELD</span>, <span class="text-[#166ee0] font-bold">IMPRESORAS</span> y <span class="text-[#166ee0] font-bold">LECTORES</span> de las marcas que comercializamos. <br/><br/> Nuestro equipo de ingenieros especializados cuenta con la formación, experiencia y conocimientos necesarios para realizar reparaciones de alta calidad por lo que todas nuestras reparaciones cuentan con una garantía de <span class="text-accent font-bold">100</span> días naturales.
-    image: /images/3 REPARACION.png
+    image: /images/reparacion-mantenimiento-handheld-impresoras-lectores.png
 
   - title: <a href= "/software">SOFTWARE</a>
     content: "Nuestra solución está conformada por el cliente para equipo de escritorio con <b class='text-accent'>S.O. Windows</b>, la cual es una consola que permitirá consolidar la información recabada por los clientes móviles y realizar reportes a la medida, así como los diseñados para detectar diferencias en tu almacén.<br/> <br/>Para el cliente móvil <b class='text-accent'>(HAND HELD)</b>, conservamos nuestra versión para Windows Mobile para nuestros clientes que han decidido mantener su tecnología con este <b class='text-accent'>S.O.</b> y para aquellos que sus necesidades los llevaron a migrar a la plataforma <b class='text-accent'>ANDROID</b> ya tenemos nuestra versión a su servicio."
-    image: /images/4 SOFTWARE.png
+    image: /images/software-toma-inventario-almacenes.png
 
 
 ##key features
@@ -50,7 +50,7 @@ features:
       content: La renta de nuestros equipos <br>es 100% deducible de <br>impuestos, lo que representa <br>una gran ventaja para su <br>negocio.
     - icon: "folder"  #icon package react-feather-icon [https://feathericons.com/]
       title: Respaldo
-      content: En la renta de 20 o más unidades proporcionamos equipo de <br>respaldo.
+      content: En la renta de 20 o más <br>unidades, proporcionamos <br>equipo de respaldo.
     - icon: "star"  #icon package react-feather-icon [https://feathericons.com/]
       title: Mejores opciones
       content: Logramos ofrecer a nuestros <br>clientes una solucion integral <br>con un equipo de gran <br>performance.
@@ -79,10 +79,10 @@ testimonial:
 ## Call to Action
 call_to_action:
   title: "En <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Inteli</span><span class='text-accent text-shadow-[0px_5px_15px]' >Systems</span> ofrecemos los mejores resultados."
-  description: "Cuenta con el capital humano especializado en renta, reparación o venta de **HandHeld**, lectores de códigos para decodificación de QR, 1D y 2D, impresoras industriales, de escritorio y portátiles, así como software especializado o diseñado a la medida."
+  description: "Contamos con el capital humano especializado en renta, reparación o venta de **HandHeld**, lectores de códigos para decodificación de QR, 1D y 2D, impresoras industriales, de escritorio y portátiles, así como software especializado o diseñado a la medida."
   button: 
     label: "Contáctanos"
-    href: "/"
+    href: "https://intelisystems.mx/contact/"
     color: accent
 
 ---

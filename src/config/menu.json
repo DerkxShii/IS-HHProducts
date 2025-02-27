@@ -11,25 +11,21 @@
       "children": [
         {
           "name": "Arrendamiento",
-          "url": "/arrendamiento"
+          "url": "/renta-venta-handheld-impresoras-lectores"
         },
         {
           "name": "Reparación",
-          "url": "/reparacion"
+          "url": "/reparacion-handheld-impresoras-lectores"
         },
         {
           "name": "Software",
-          "url": "/software"
+          "url": "/toma-de-inventario-almacen"
         }
       ]
     },
     {
       "name": "Productos",
       "url": "https://intelisystems.mx/products/"
-    },
-    {
-      "name": "Promociones",
-      "url": "/promociones"
     },
     {
       "name": "Blog",
@@ -43,17 +39,17 @@
 
   "menuContact": [
     {
-      "name": "info@intelisystems.net",
+      "name": "contacto@intelisystems.net",
       "url": "https://intelisystems.mx/contact/",
       "icon": "mail"
     },
     {
-      "name": "55 5701 7337",
+      "name": "55 5701 4315",
       "url": "https://intelisystems.mx/contact/",
       "icon": "phone"
     },
     {
-      "name": "55 7122 2638",
+      "name": "56 4376 8599",
       "url": "https://api.whatsapp.com/send/?phone=5215571222638&text&type=phone_number&app_absent=0",
       "icon": "whatsapp"
     },
@@ -67,19 +63,19 @@
   "footer": [
     {
       "name": "Arrendamiento",
-      "url": "/arrendamiento"
+      "url": "/renta-venta-handheld-impresoras-lectores"
     },
     {
       "name": "Reparación",
-      "url": "/reparacion"
+      "url": "/reparacion-handheld-impresoras-lectores"
+    },
+    {
+      "name": "Software",
+      "url": "/toma-de-inventario-almacen"
     },
     {
       "name": "Venta",
       "url": "https://intelisystems.mx/products/"
-    },
-    {
-      "name": "Software",
-      "url": "/software"
     }
   ]
 }

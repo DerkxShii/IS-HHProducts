@@ -1,0 +1,160 @@
+---
+import PageHeader from "@/components/core/PageHeader.astro";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import Image from "@/components/react/image";
+import { getEntry } from "astro:content";
+
+const homepage = await getEntry("homepage", "index");
+const call_to_action = homepage.data.call_to_action;
+const images = [
+  { src: "/images/imagotipo-saga.png", alt: "saga" }
+];
+---
+
+<Base>
+  <!-- header -->
+  <div class="relative isolate overflow-hidden bg-gray-950  mt-12 lg:mb-26 animate-fade-in"> 
+    <video autoplay="autoplay" muted playsinline contextmenu="return false;" preload="auto" loop="loop" class="absolute inset-0 -z-10 w-full h-full object-cover">
+      <source src="/videos/video servicios software.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="inset-0 w-full h-full bg-black bg-opacity-50 py-20 sm:py-40">
+      <div class="lg:mb-2 animate-fade-in">
+        <div class="relative isolate px-6 pt-4 lg:px-8">
+          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+          <div class="mx-auto max-w-4xl sm:py-16 lg:py-12">
+            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            </div>
+            <div class="text-center">
+              <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-100 dark:text-gray-100 sm:text-7xl">Sistema de <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Gestión</span> y <span class="text-primary text-shadow-[0px_5px_15px] shadow-accent/10">Control</span> de Almacenes</h1>
+              <p class="mt-8 text-lg font-medium text-pretty text-gray-100 dark:text-gray-100 sm:text-xl/8">Somos la mejor opción cuando se trata del desarrollo de software para handheld y dispositivos móviles, tenemos la experiencia para crear y diseñar soluciones, basadas en Windows CE, Windows Mobile y Android, Así como aplicativos Web.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="https://intelisystems.mx/contact/" class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#111827] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">Contáctanos</a>
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white dark:text-gray-100 sm:grid-cols-2 md:flex lg:gap-x-7">
+                  <a href="/renta-venta-handheld-impresoras-lectores" class="hover:text-accent">Arrendamiento <span aria-hidden="true">&rarr;</span></a>
+                  <a href="/reparacion-handheld-impresoras-lectores" class="hover:text-accent">Reparación <span aria-hidden="true">&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Features Cards -->
+  <div class="py-8 sm:py-12">
+    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <h2 class="text-center text-base/7 font-semibold text-accent">Software para toma de Inventario</h2>
+      <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 dark:text-gray-100 sm:text-5xl">Beneficios y Funcionalidades</p>
+      <div class="mt-2 grid gap-4 sm:mt-8 lg:grid-cols-4 lg:grid-rows-2 lg:justify-center lg:items-center md:grid-cols-2 md:grid-rows-auto">
+        
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/service-icon-2.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-70px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-32 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-20">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Optimización de</span>
+            <span class="text-accent font-bold text-2xl">Sistemas</span>
+            <p class="text-neutral-900 dark:text-gray-300">Contarás con una aplicación cliente-servidor optimizada para datos, búsquedas, etc.</p>
+          </div>
+        </div>
+
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/portfolio-icon-5.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-60px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-32 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-28">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Entorno de</span>
+            <span class="text-accent font-bold text-2xl">Usuario</span>
+            <p class="text-neutral-900 dark:text-gray-300">Proporcionamos un entorno sencillo para cualquier operador, incluye capacitación de personal.</p>
+          </div>
+        </div>
+
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/service-icon-1.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-70px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-40 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-28">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Aplicaciones para</span>
+            <span class="text-accent font-bold text-2xl">HandHeld</span>
+            <p class="text-neutral-900 dark:text-gray-300">Tenemos aplicaciones para realizar distintas tareas como toma de inventarios, reportes de venta, cobranza, etc.</p>
+          </div>
+        </div>
+
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/portfolio-icon-6.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-70px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-44 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-32">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Almacenamiento en</span>
+            <span class="text-accent font-bold text-2xl">Servidores</span>
+            <p class="text-neutral-900 dark:text-gray-300">Contamos con un software administrativo para el almacenamiento de datos, carga masiva de información y exportación de datos.</p>
+          </div>
+        </div>
+
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/portfolio-icon-2.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-60px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-32 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-20">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Impresión de</span>
+            <span class="text-accent font-bold text-2xl">Tickets</span>
+            <p class="text-neutral-900 dark:text-gray-300">Nuestros sistemas generan e imprimen tickets, etiquetas, códigos QR, Aztec, etc.</p>
+          </div>
+        </div>
+
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/portfolio-icon-3.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-70px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-40 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-28">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Alerta de</span>
+            <span class="text-accent font-bold text-2xl">Notificaciones</span>
+            <p class="text-neutral-900 dark:text-gray-300">Recibirás notificaciones en tiempo real por medio de correo electrónico conforme el cliente solicite.</p>
+          </div>
+        </div>
+
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/portfolio-icon-4.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-70px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-44 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-32">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Rápida</span>
+            <span class="text-accent font-bold text-2xl">Conectividad</span>
+            <p class="text-neutral-900 dark:text-gray-300">Fácilidad para el intercambio de datos desde cualquier posición con internet, almacenamiento en la nube, etc.</p>
+          </div>
+        </div>
+
+        <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-80 w-64 rounded-2xl hover:duration-700 duration-700 mx-auto">
+          <div class="w-64 h-80 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex items-center justify-center">
+            <img src="https://handheldrepair.com.mx/assets/img/portfolio-icon-1.png" alt="placeholder" class="object-contain w-3/4 h-3/4 mt-[-40px]" />
+          </div>
+          <div class="absolute bg-gray-50 dark:bg-gray-950 lg:-bottom-40 w-64 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 md:-bottom-28">
+            <span class="text-gray-900 dark:text-gray-100 font-bold text-xs">Optimización de</span>
+            <span class="text-accent font-bold text-2xl">Gestión</span>
+            <p class="text-neutral-900 dark:text-gray-300">Con nuestro software evitarás el alto costo de la mano de obra y también ahorrarás tiempo en la gestión.</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-16">
+    <div class="container">
+
+          <!-- call to action -->
+          <Cta {...call_to_action} />
+
+    </div>
+  </section>
+</Base>

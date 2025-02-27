@@ -1,0 +1,224 @@
+---
+// filepath: /c:/Users/Derko/IS-HHProducts/src/pages/reparacion.astro
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import { getEntry } from "astro:content";
+
+const homepage = await getEntry("homepage", "index");
+const call_to_action = homepage.data.call_to_action;
+---
+
+<Base>
+  <!-- header -->
+  <div class="relative isolate overflow-hidden bg-gray-950  mt-12 lg:mb-26 animate-fade-in"> 
+    <video autoplay="autoplay" muted playsinline contextmenu="return false;" preload="auto" loop="loop" class="absolute inset-0 -z-10 w-full h-full object-cover">
+      <source src="videos/video servicios reparacion.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="inset-0 w-full h-full bg-black bg-opacity-50 py-16 sm:py-36">
+      <div class="mx-auto max-w-6xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+          <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          </div>
+          <div class="text-center">
+            <h1 class="text-5x1 font-semibold tracking-tight text-balance text-gray-100 dark:text-gray-100 sm:text-7xl"><span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Reparación</span> y <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Mantenimiento</span> de Equipo </h1>
+            <p class="mt-8 text-lg font-medium text-pretty text-gray-100 dark:text-gray-100 sm:text-xl/8">En Intelisystems, ofrecemos servicios especializados en reparación, mantenimiento y renta de handhelds e impresoras portátiles. Nuestro personal experto está comprometido en asegurar que tus operaciones se mantengan sin interrupciones, brindando soluciones flexibles y adaptadas a tus necesidades empresariales.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="https://intelisystems.mx/contact/" class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#111827] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">Contáctanos</a>
+              <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white dark:text-gray-100 sm:grid-cols-2 md:flex lg:gap-x-7">
+                <a href="/renta-venta-handheld-impresoras-lectores" class="hover:text-accent">Arrendamiento <span aria-hidden="true">&rarr;</span></a>
+                <a href="/toma-de-inventario-almacen" class="hover:text-accent">Software <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </div>
+          </div>
+          <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="flex flex-col-reverse gap-1">
+              <dt class="text-base/7 text-gray-300 dark:text-gray-100">Dispositivos HandHeld reparados con éxito.</dt>
+              <dd class="text-4xl font-semibold tracking-tight text-white dark:text-gray-100">3,000+</dd>
+            </div>
+            <div class="flex flex-col-reverse gap-1">
+              <dt class="text-base/7 text-gray-300 dark:text-gray-100">Tasa de resolución de problemas en el primer intento.</dt>
+              <dd class="text-4xl font-semibold tracking-tight text-white dark:text-gray-100">98.7%</dd>
+            </div>
+            <div class="flex flex-col-reverse gap-1">
+              <dt class="text-base/7 text-gray-300 dark:text-gray-100">Crecimiento en la demanda de nuestros servicios año tras año.</dt>
+              <dd class="text-4xl font-semibold tracking-tight text-white dark:text-gray-100">80%</dd>
+            </div>
+            <div class="flex flex-col-reverse gap-1">
+              <dt class="text-base/7 text-gray-300 dark:text-gray-100">Vida útil de los dispositivos gracias a nuestro mantenimiento preventivo.</dt>
+              <dd class="text-4xl font-semibold tracking-tight text-white dark:text-gray-100">3x</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Info -->
+    <div class="py-8 sm:py-16">
+      <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="text-center text-base/7 font-semibold text-accent">Reparación y Mantenimiento</h2>
+        <h1 class="mx-auto mt-2 max-w-lg text-center text-2xl font-semibold tracking-tight text-balance text-gray-950 dark:text-gray-100 sm:text-3xl">Handheld | PDA | Pocket PC | Impresoras Portátiles</h1>
+        <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+
+          <div class="relative lg:row-span-2">
+            <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+              <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Diagnóstico y Soporte</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600  max-lg:text-center">Obten un diagnóstico rápido y soluciones efectivas para tus dispositivos. Nuestro soporte técnico especializado asegura que los HandHeld estén en condiciones óptimas para tus operaciones diarias.</p>
+              </div>
+              <div class="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                  <img class="w-full h-3/4 object-cover object-top" src="/images/reparacion 1.png" alt="" id= "Renta HandHeld 1">
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]"></div>
+          </div>
+
+          <div class="relative max-lg:row-start-1">
+            <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Planes de mantenimiento preventivo</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Reduce los tiempos de inactividad con nuestros planes de mantenimiento preventivo para HandHeld. Programamos revisiones periódicas para asegurar el funcionamiento continuo y evitar problemas futuros.</p>
+              </div>
+              <div class="flex flex-1 items-center justify-center max-lg:pt-10 max-lg:pb-12 lg:pb-2">
+                <img class="w-full max-lg:max-w-xs object-cover object-top" src="/images/reparacion-mantenimiento-handheld.png" alt="">
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]"></div>
+          </div>
+
+          <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+            <div class="absolute inset-px rounded-lg bg-white "></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Método Tarifario</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Dependiendo del daño que presente su equipo se determinara si requiere una reparación MENOR, INTERMEDIA O MAYOR, cuidando no solo la parte operativa de su equipo sino también la estética.</p>
+              </div>
+              <div class="flex flex-1 items-center justify-center max-lg:pt-10 max-lg:pb-12 lg:pb-2">
+                <img class="w-full max-lg:max-w-xs" src="/images/reparacion 3.png" alt="">
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"></div>
+          </div>
+
+          <div class="relative lg:row-span-2">
+            <div class="absolute inset-px rounded-lg bg-white  max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+              <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Contrato de Mantenimiento</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600  max-lg:text-center">Incluye la reparación de las unidades todas las veces que sea necesario durante la vigencia del contrato, con bajos tiempos de espera debido a que la unidad ingresa preautorizada para su reparación.</p>
+              </div>
+              <div class="relative min-h-[30rem] w-full grow">
+                <img class="w-full h-3/4 object-cover object-top" src="/images/reparacion 2.png" alt="">
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Servicios -->
+    <div class="py-4 sm:py-12">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base/7 font-semibold text-accent">Reparación y Mantenimiento</h2>
+          <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-balance">Reparaciones</p>
+          <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-100">Algunas de las reparaciones más comunes que realizamos son:</p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.25px" height="27px" viewBox="0 0 384 512"><path fill="#ffffff" d="M16 64C16 28.7 44.7 0 80 0h224c35.3 0 64 28.7 64 64v384c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64zm208 384a32 32 0 1 0-64 0a32 32 0 1 0 64 0m80-384H80v320h224z"/></svg>
+                </div>
+                Pantalla, LCD o Display táctil (Touchscreen).
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"><path d="M10 8h.01M12 12h.01M14 8h.01M16 12h.01M18 8h.01M6 8h.01M7 16h10m-9-4h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></g></svg>
+                </div>
+                Teclados de HandHeld.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24"><path fill="#ffffff" d="M9 2a1 1 0 0 0-1 1v17c0 1.11.89 2 2 2h5c1.11 0 2-.89 2-2V9c0-1.11-.89-2-2-2h-5V3a1 1 0 0 0-1-1m1 7h5v4h-5z"/></svg>
+                </div>
+                Carcasas, mangos, gatillos, radios, etc.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24"><path fill="#ffffff" d="M7.05 3.5a3.52 3.52 0 0 0 0 4.97l8.49 8.48c.58.59.58 1.55 0 2.12c-.59.59-1.54.59-2.13 0l-4.24-4.24l1.06-1.06l-3.53-3.54l-.36.36l-1.41-1.42a1.02 1.02 0 0 0-1.43 0l-1.4 1.42c-.39.41-.39 1.02 0 1.41l1.4 1.41l-.34.36L6.7 17.3l1.06-1.06L12 20.5a3.53 3.53 0 0 0 4.95 0c1.37-1.38 1.37-3.6 0-4.96L8.46 7.05c-.58-.59-.58-1.55 0-2.12c.59-.59 1.54-.59 2.13 0l4.24 4.24l-1.06 1.06l3.53 3.54l.36-.36l1.41 1.42c.39.39 1.03.39 1.43 0l1.4-1.42c.39-.41.39-1.02 0-1.41l-1.4-1.41l.34-.36L17.3 6.7l-1.06 1.06L12 3.5a3.53 3.53 0 0 0-4.95 0m-4.24 7.79l1.41-1.41l1.42 1.41l-1.42 1.42m14.14 0l1.42-1.42l1.41 1.42l-1.41 1.41Z"/></svg>
+                </div>
+                Reparación de conectores de carga.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 32 32"><path fill="#ffffff" d="M26 20h-6v-2h6zm4 8h-6v-2h6zm-2-4h-6v-2h6z"/><path fill="#ffffff" d="M17.003 20a4.9 4.9 0 0 0-2.404-4.173L22 3l-1.73-1l-7.577 13.126a5.7 5.7 0 0 0-5.243 1.503C3.706 20.24 3.996 28.682 4.01 29.04a1 1 0 0 0 1 .96h14.991a1 1 0 0 0 .6-1.8c-3.54-2.656-3.598-8.146-3.598-8.2m-5.073-3.003A3.11 3.11 0 0 1 15.004 20c0 .038.002.208.017.469l-5.9-2.624a3.8 3.8 0 0 1 2.809-.848M15.45 28A5.2 5.2 0 0 1 14 25h-2a6.5 6.5 0 0 0 .968 3h-2.223A16.6 16.6 0 0 1 10 24H8a17.3 17.3 0 0 0 .665 4H6c.031-1.836.29-5.892 1.803-8.553l7.533 3.35A13 13 0 0 0 17.596 28Z"/></svg>
+                </div>
+                Limpieza de impresoras, terminales handheld y lectores de código de barras.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-width="1.4" d="M1 19h22V1H1zm4 4h14zm3 0h8v-4H8zM7.757 5.757l2.122 2.122zM9 10H6zm.879 2.121l-2.122 2.122zM12 13v3zm2.121-.879l2.122 2.122zM18 10h-3zm-1.757-4.243l-2.122 2.122zM12 7V4zm0 0a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg>
+                </div>
+                Actualización y reparación del sistema operativo de sus equipos HandHeld.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 16 16"><path fill="#ffffff" d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0z"/></svg>
+                </div>
+                Lectores de código de barras por roturas, golpes o daños.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#ffffff"><path d="M11 11L6 6M5 7.5L7.5 5l-3-1.5l-1 1zm14.975 1.475a3.5 3.5 0 0 0 .79-3.74l-1.422 1.422h-2v-2l1.422-1.422a3.5 3.5 0 0 0-4.529 4.53l-6.47 6.471a3.5 3.5 0 0 0-4.53 4.529l1.421-1.422h2v2l-1.422 1.422a3.5 3.5 0 0 0 4.53-4.528l6.472-6.472a3.5 3.5 0 0 0 3.738-.79"/><path d="m11.797 14.5l5.604 5.604a1.35 1.35 0 0 0 1.911 0l.792-.792a1.35 1.35 0 0 0 0-1.911L14.5 11.797"/></g></svg>
+                </div>
+                Reparación de modulos láser de HandHeld.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 18q-1.65 0-2.825-1.175T7 14q-2.5.025-4.25-1.737T1 8q0-.825.588-1.412T3 6h4V5H5V3h6v2H9v1h3.175q.4 0 .763.15t.637.425l8.375 8.375Q23 16 23 17.45t-1.05 2.5t-2.5 1.05t-2.5-1.05L15 18zm0-4H8.975q0 .825.588 1.413T11 16h2zm1.175-6H3q0 1.65 1.175 2.825T7 12h4.825l6.55 6.55q.45.45 1.088.45t1.087-.45t.45-1.088t-.45-1.087zm0 0"/></svg>
+                </div>
+                Baterías de impresoras, terminales handheld y lectores de código de barras.
+              </dt>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
+                <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><rect width="13.5" height="13.5" x="5.25" y="5.25" rx="3"/><path d="M18.75 8.75h2.5M18.75 12h2.5m-2.5 3.25h2.5m-6 3.5v2.5M12 18.75v2.5m-3.25-2.5v2.5m-6-12.5h2.5M2.75 12h2.5m-2.5 3.25h2.5m10-12.5v2.5M12 2.75v2.5m-3.25-2.5v2.5"/><rect width="5" height="5" x="9.5" y="9.5" rx="1"/></g></svg>
+                </div>
+                Reparación a nivel componente o sustitución de la motherboard.
+              </dt>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+  <section class="content">
+    <div class="container">
+      <!-- call to action -->
+      <Cta {...call_to_action} />
+    </div>
+  </section>
+</Base>

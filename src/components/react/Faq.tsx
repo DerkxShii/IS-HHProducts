@@ -9,8 +9,8 @@ export default function App() {
         </header> 
         <Accordion variant="shadow">
             <AccordionItem key="1" aria-label="Accordion 1" title="¿El plan de renta incluye software?">
-            Si, incluye SOFTWARE(Inventarios Windows Mobile), accesorios de carga y comunicación para cubrir el número de equipos 
-            solicitados, además de una batería de respaldo por equipo. Y un equipo de respaldo (en rentas mayores a 10 equipos).
+            Si, incluye SOFTWARE (Inventarios Windows Mobile e Inventarios Android), accesorios de carga y comunicación para cubrir el número de equipos 
+            solicitados, además de una batería de respaldo por equipo. Y un equipo de respaldo (en rentas mayores a 20 equipos).
             </AccordionItem>
             <AccordionItem key="2" aria-label="Accordion 2" title="¿La entrega puede ser en otro Estado?">
             Si, en este caso deberá de considerarse costo de mensajería, y tipo de envío que puede ser express 24 hrs. O estándar 

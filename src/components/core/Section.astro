@@ -14,7 +14,7 @@ if (!section) {
   throw new Error("Section data is required");
 }
 const { title, buttons, image, content, image_position } = section;
-const image_classes = ""; // Define image_classes with a default value
+const image_classes = "banner-image-large"; // Define image_classes with a default value
 const image_position_classes = (() => {
   if (!image && !image_position) {
     return ["", "col-12", ""];
@@ -45,7 +45,7 @@ const image_position_classes = (() => {
 <section class="section relative">
   <div class="container">
     <div class={`row items-center ${image_position ? 'custom-position' : ''} ${image_position_classes[0]}`}>
-      <div class={`${image_position_classes[1]}`}>
+      <div class="col-12 md:col-5 lg:col-5">
         <h1 class={`${section.title_size}`} set:html={markdownify(title)} />
         <p class="mt-6" set:html={markdownify(content)} />
         {
@@ -60,7 +60,7 @@ const image_position_classes = (() => {
       </div>
       {
         image && (
-          <div class={`${image_position_classes[2]}`}>
+          <div class="col-12 md:col-7 lg:col-7">
             <Image
               class={`w-full object-contain ${image_classes}`}
               alt="section-image"
@@ -80,9 +80,13 @@ const image_position_classes = (() => {
     width: 100%; /* Hace que la imagen tome el 100% del ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+  }
+  .banner-image-large:hover {
+    transform: scale(1.1); /* Aplica el zoom al hacer hover */
   }
   .section.relative .container {
-    max-width: 85%; /* Asegura que el contenedor tome el 100% del ancho disponible */
+    max-width: 90%; /* Asegura que el contenedor tome el 100% del ancho disponible */
     padding: 0; /* Elimina el padding del contenedor */
   }
   .custom-position {
@@ -94,11 +98,11 @@ const image_position_classes = (() => {
     max-width: 100%;
   }
   .custom-position .md\:col-5 {
-    flex: 0 0 40%; /* Cambia el valor a 40% para el texto */
-    max-width: 40%; /* Cambia el valor a 40% para el texto */
+    flex: 0 0 45%; /* Cambia el valor a 45% para el texto */
+    max-width: 45%; /* Cambia el valor a 45% para el texto */
   }
   .custom-position .md\:col-7 {
-    flex: 0 0 60%; /* Cambia el valor a 60% para la imagen */
-    max-width: 60%; /* Cambia el valor a 60% para la imagen */
+    flex: 0 0 55%; /* Cambia el valor a 55% para la imagen */
+    max-width: 55%; /* Cambia el valor a 55% para la imagen */
   }
 </style>
