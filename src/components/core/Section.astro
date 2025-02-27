@@ -14,6 +14,7 @@ if (!section) {
   throw new Error("Section data is required");
 }
 const { title, buttons, image, content, image_position } = section;
+const image_classes = ""; // Define image_classes with a default value
 const image_position_classes = (() => {
   if (!image && !image_position) {
     return ["", "col-12", ""];
@@ -28,12 +29,12 @@ const image_position_classes = (() => {
       case "left":
         return [
           "flex-row-reverse",
-          "col-12 md:col-7 lg:col-6",
-          "col-12 md:col-5 lg:col-6",
+          "col-12 md:col-5 lg:col-4",
+          "col-12 md:col-7 lg:col-8",
         ];
       case "right":
       default:
-        return ["", "col-12 md:col-7 lg:col-6", "col-12 md:col-5 lg:col-6"];
+        return ["", "col-12 md:col-5 lg:col-4", "col-12 md:col-7 lg:col-8"];
     }
   } else {
     return ["", "col-12", ""];
@@ -43,27 +44,10 @@ const image_position_classes = (() => {
 
 <section class="section relative">
   <div class="container">
-    <div
-      class=`row items-center ${image_position ? 'custom-position' : ''} ${image_position_classes[0]}`
-    >
-      {
-        image && image_position === "top" && (
-          <div class={`${image_position_classes[2]}`}>
-            <Image
-              class="w-1/2 mr-auto ml-auto object-contain"
-              alt="section-image"
-              src={image}
-              width={500}
-              height={333}
-            />
-          </div>
-        )
-      }
-      <div class=`${image_position_classes[1]}`>
+    <div class={`row items-center ${image_position ? 'custom-position' : ''} ${image_position_classes[0]}`}>
+      <div class={`${image_position_classes[1]}`}>
         <h1 class={`${section.title_size}`} set:html={markdownify(title)} />
-
         <p class="mt-6" set:html={markdownify(content)} />
-
         {
           buttons && buttons.length > 0 && (
             <div class="flex flex-wrap mt-8">
@@ -74,19 +58,47 @@ const image_position_classes = (() => {
           )
         }
       </div>
-        {
-          image && image_position != "top" && (
-            <div class={`${image_position_classes[2]}`}>
-              <Image
-                class="w-full object-contain"
-                alt="section-image"
-                src={image}
-                width={500}
-                height={333}
-              />
-            </div>
-          )
-        }
+      {
+        image && (
+          <div class={`${image_position_classes[2]}`}>
+            <Image
+              class={`w-full object-contain ${image_classes}`}
+              alt="section-image"
+              src={image}
+              width={500}
+              height={333}
+            />
+          </div>
+        )
+      }
     </div>
   </div>
 </section>
+
+<style>
+  .banner-image-large {
+    width: 100%; /* Hace que la imagen tome el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .section.relative .container {
+    max-width: 85%; /* Asegura que el contenedor tome el 100% del ancho disponible */
+    padding: 0; /* Elimina el padding del contenedor */
+  }
+  .custom-position {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .custom-position .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .custom-position .md\:col-5 {
+    flex: 0 0 40%; /* Cambia el valor a 40% para el texto */
+    max-width: 40%; /* Cambia el valor a 40% para el texto */
+  }
+  .custom-position .md\:col-7 {
+    flex: 0 0 60%; /* Cambia el valor a 60% para la imagen */
+    max-width: 60%; /* Cambia el valor a 60% para la imagen */
+  }
+</style>

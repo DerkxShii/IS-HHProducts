@@ -2,10 +2,11 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'Soluciones de <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">HANDHELD</span> para <span class="text-[#2997ff]"> RENTA, VENTA Y REPARACIÓN</span>'
-  title_size: "text-4xl md:text-6xl"
-  content: Impulsa la eficiencia y precisión de tu negocio con nuestras soluciones integrales en <span class="text-[#166ee0] font-bold">TERMINALES PORTÁTILES HANDHELD, IMPRESORAS DE CÓDIGOS DE BARRAS, LECTORES DE INVENTARIO</span> y <span class="text-[#166ee0] font-bold">SOFTWARE DE GESTIÓN DE ALMACENES.</span> Ofrecemos servicios de <span class="text-[#166ee0] font-bold">RENTA, VENTA</span> y <span class="text-[#166ee0] font-bold">REPARACIÓN</span>, adaptándonos a las necesidades específicas de tu empresa.
-  image: /images/logo.png
+  title: 'Soluciones <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">HANDHELD</span> en <span class="text-[#2997ff]"> RENTA Y REPARACIÓN</span>'
+  title_size: "text-7x1 md:text-7x1"
+  content: Impulsa la eficiencia y precisión de tu negocio con nuestras soluciones en <span class="text-[#166ee0] font-bold">TERMINALES PORTÁTILES HANDHELD, IMPRESORAS DE CÓDIGOS DE BARRAS, LECTORES DE INVENTARIO</span> y <span class="text-[#166ee0] font-bold">SOFTWARE DE GESTIÓN DE ALMACENES.</span> Ofrecemos servicios de <span class="text-[#166ee0] font-bold">RENTA, VENTA</span> y <span class="text-[#166ee0] font-bold">REPARACIÓN</span>, adaptándonos a las necesidades específicas de tu empresa.
+  image: /images/1 INICIO.png
+  image_classes: "banner-image-large"
   buttons:
     - label: Contáctanos
       href: "https://intelisystems.mx/contact/"
@@ -16,15 +17,15 @@ banner:
 sections:
   - title: <a href= "/arrendamiento">ARRENDAMIENTO</a>
     content:  Accede a la tecnología más avanzada sin comprometer tu capital. Nuestro servicio de <span class="text-[#166ee0] font-bold">ARRENDAMIENTO</span> de <span class="text-[#166ee0] font-bold">HANDHELD</span> e <span class="text-[#166ee0] font-bold">IMPRESORAS</span> te brinda la flexibilidad de equipar tu operación con dispositivos de alto rendimiento, asegurando la captura de datos precisa y la optimización de tus procesos logísticos, todo a un costo accesible y con opciones de actualización continua.
-    image: /images/logo.png
+    image: /images/2 RENTA.png
 
   - title: <a href= "/reparacion">REPARACIÓN</a>
     content: Nos especializamos en el mantenimiento de <span class="text-accent font-bold">HANDHELD</span>, <span class="text-[#166ee0] font-bold">IMPRESORAS</span> y <span class="text-[#166ee0] font-bold">LECTORES</span> de las marcas que comercializamos. <br/><br/> Nuestro equipo de ingenieros especializados cuenta con la formación, experiencia y conocimientos necesarios para realizar reparaciones de alta calidad por lo que todas nuestras reparaciones cuentan con una garantía de <span class="text-accent font-bold">100</span> días naturales.
-    image: /images/logo.png
+    image: /images/3 REPARACION.png
 
   - title: <a href= "/software">SOFTWARE</a>
     content: "Nuestra solución está conformada por el cliente para equipo de escritorio con <b class='text-accent'>S.O. Windows</b>, la cual es una consola que permitirá consolidar la información recabada por los clientes móviles y realizar reportes a la medida, así como los diseñados para detectar diferencias en tu almacén.<br/> <br/>Para el cliente móvil <b class='text-accent'>(HAND HELD)</b>, conservamos nuestra versión para Windows Mobile para nuestros clientes que han decidido mantener su tecnología con este <b class='text-accent'>S.O.</b> y para aquellos que sus necesidades los llevaron a migrar a la plataforma <b class='text-accent'>ANDROID</b> ya tenemos nuestra versión a su servicio."
-    image: /images/logo.png
+    image: /images/4 SOFTWARE.png
 
 
 ##key features
@@ -59,7 +60,7 @@ features:
 
 #testimonial
 testimonial:
-  title: Testimonios de otros clientes
+  title: TESTIMONIOS HANDHELD
   description: Conoce lo que opinan nuestros clientes de nuestros servicios de **HANDHELD**.
   testimonial_list:
     - author: Luis Fernández
