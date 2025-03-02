@@ -40,17 +40,17 @@
   "menuContact": [
     {
       "name": "contacto@intelisystems.net",
-      "url": "https://intelisystems.mx/contact/",
+      "url": "mailto:contacto@intelisystems.net?Subject=Informaci%C3%B3n%20sobre%20los%20servicio%20de%20Renta,%20Venta%20y%20Reparaci%C3%B3n.",
       "icon": "mail"
     },
     {
       "name": "55 5701 4315",
-      "url": "https://intelisystems.mx/contact/",
+      "url": "tel:5557014315",
       "icon": "phone"
     },
     {
       "name": "56 4376 8599",
-      "url": "https://api.whatsapp.com/send/?phone=5215571222638&text&type=phone_number&app_absent=0",
+      "url": "https://api.whatsapp.com/send?phone=+525643768599&text=%C2%A1Hola!,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20que%20proporcionan.",
       "icon": "whatsapp"
     },
     {

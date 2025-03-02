@@ -41,6 +41,7 @@ export default function Carrusel() {
 
   return (
     <section className="mx-auto w-full ma x-w-6xl px-10 py-20 sm:py-32 lg:px-10 lg:py-20 dark:bg-gray-900 dark:bg-opacity-50">
+      <h1 className="text-4xl font-bold text-center text-foreground mb-10 ">MARCAS QUE TRABAJAN CON NOSOTROS</h1>
       <ScrollingBanner shouldPauseOnHover gap="75px">
         {logos.map(({ key, logo }) => (
           <div
